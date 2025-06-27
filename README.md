@@ -62,14 +62,14 @@ const key = "SUA_CHAVE_AQUI";
 📸 Preview
 
 📌 Observações
+
 Este projeto é totalmente front-end.
+Digite o nome do filme em inglês depois o ano.
 
 A OMDb API pode exigir registro gratuito para gerar sua chave.
 
 O layout foi construído pensando na experiência do usuário e na organização visual da lista de filmes.
 
-👨‍💻 Autor
-Anderson Gouveia
-🔗 [Seu LinkedIn ou GitHub aqui]
+
 
 
