@@ -6,10 +6,11 @@ const movieYear = document.getElementById("movie-year");
 const movieListContainer = document.getElementById("movie-list");
 //let movieList = [];
 let movieList = JSON.parse(localStorage.getItem("movieList")) ?? [];
+const key = "d6d5845c"; //Aqui irá a sua chave de API entre aspas "".
+
 async function searchButtonClickHandler() {
   try {
-    let url = `http://www.omdbapi.com/?
-apikey=${key}&t=${movieNameParameterGenerator()}${movieYearParameterGenerator()}`;
+    let url = `http://www.omdbapi.com/?apikey=${key}&t=${movieNameParameterGenerator()}${movieYearParameterGenerator()}`;
     const response = await fetch(url);
     const data = await response.json();
     console.log("data: ", data);
@@ -79,3 +80,4 @@ for (const movieInfo of movieList) {
 }
 
 searchButton.addEventListener("click", searchButtonClickHandler);
+
