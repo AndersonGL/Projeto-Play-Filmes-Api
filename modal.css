@@ -5,6 +5,7 @@
   --secondary-color: #774936;
   --light-secondary: #b97e64;
 }
+
 #modal-overlay {
   display: flex;
   position: fixed;
@@ -15,15 +16,18 @@
   justify-content: center;
   align-items: center;
 }
+
 .overlay {
   visibility: hidden;
   transition: all 0.3s ease;
   opacity: 0;
 }
+
 .open {
   visibility: visible;
   opacity: 1;
 }
+
 #modal-background {
   background-color: var(--light-primary);
   width: 100%;
@@ -32,23 +36,28 @@
   z-index: 0;
   opacity: 0.4;
 }
+
 #modal-container {
   z-index: 1;
   background-color: var(--ligthest-color);
   padding: 1rem 3rem;
   border-radius: 10px;
 }
+
 #movie-title {
   padding: 1rem 0;
 }
+
 #modal-body {
   display: flex;
   justify-content: center;
   padding: 1rem 0;
 }
+
 #movie-poster {
   border-radius: 10px;
 }
+
 #movie-info {
   display: flex;
   flex-direction: column;
@@ -56,6 +65,7 @@
   max-width: 300px;
   padding-left: 2rem;
 }
+
 #add-to-list {
   border: 3px solid var(--primary-color);
   padding: 0.3rem 0;
@@ -64,6 +74,7 @@
   font-weight: bold;
   box-shadow: 1px 1px 10px #000;
 }
+
 #add-to-list:focus,
 #add-to-list:hover {
   background-color: var(--light-primary);

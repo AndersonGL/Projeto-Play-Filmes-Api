@@ -2,64 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lista de Filmes para assistir</title>
+    <title>Lista de filmes para assistir</title>
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./modal.css" />
-    <link rel="stylesheet" href="./notie-master/dist/notie.min.css" />
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./src/notie-master/dist/notie.min.css" />
   </head>
-   <style>
-      @media (max-width: 768px) {
-        header {
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 1rem;
-        }
-        #search-container {
-          flex-direction: column;
-          align-items: stretch;
-          width: 100%;
-        }
-        .movie-name-wrapper,
-        .movie-year-wrapper {
-          width: 100%;
-        }
-        .movie-name-wrapper > input,
-        .movie-year-wrapper > input {
-          width: 100%;
-        }
-        #search-button {
-          align-self: flex-end;
-        }
-        #movie-list {
-          flex-direction: column;
-          align-items: center;
-        }
-        #modal-body {
-          flex-direction: column;
-          align-items: center;
-        }
-        #movie-info {
-          padding-left: 0;
-          margin-top: 1rem;
-          align-items: center;
-          text-align: center;
-        }
-        #modal-container {
-          width: 90%;
-        }
-      }
-    </style>
   <body>
     <header>
-      <h2><i class="bi bi-film"></i>Play Filmes</h2>
+      <h2><i class="bi bi-film"></i>MyMovies</h2>
       <section id="search-container">
         <div class="input-wrapper movie-name-wrapper">
           <label for="movie-name">Nome:</label>
@@ -69,7 +25,7 @@
           <label for="movie-year">Ano:</label>
           <input type="text" id="movie-year" />
         </div>
-        <button id="search-button" type="button" title="Buscar"><i class="bi bi-search"></i></button>
+        <button id="search-button"><i class="bi bi-search"></i></button>
       </section>
     </header>
     <main>
@@ -83,6 +39,6 @@
     <script src="./script.js"></script>
     <script src="./modal.js"></script>
     <script src="./key.js"></script>
-    <script src="./notie-master/dist/notie.min.js"></script>
+    <script src="./src/notie-master/dist/notie.min.js"></script>
   </body>
 </html>
