@@ -1,10 +1,9 @@
-
 // === ELEMENTOS DA INTERFACE ===
-const searchButton        = document.getElementById("search-button");
-const overlay             = document.getElementById("modal-overlay");
-const movieNameInput      = document.getElementById("movie-name");
-const movieYearInput      = document.getElementById("movie-year");
-const movieListContainer  = document.getElementById("movie-list");
+const searchButton = document.getElementById("search-button");
+const overlay = document.getElementById("modal-overlay");
+const movieNameInput = document.getElementById("movie-name");
+const movieYearInput = document.getElementById("movie-year");
+const movieListContainer = document.getElementById("movie-list");
 
 // === ESTADO EM MEMÓRIA ===
 let movieList = [];
@@ -24,7 +23,7 @@ async function searchButtonClickHandler() {
   try {
     const url = `https://www.omdbapi.com/?apikey=${API_KEY}&t=${formatMovieName()}${buildYearQuery()}`;
     const response = await fetch(url);
-    const data     = await response.json();
+    const data = await response.json();
 
     if (data.Error) throw new Error("Filme não encontrado");
 
@@ -73,7 +72,7 @@ function isMovieAlreadyOnList(id) {
 // ------------------------------------------------------------------
 function updateUI({ imdbID, Poster, Title }) {
   const article = document.createElement("article");
-  article.id    = `movie-card-${imdbID}`;
+  article.id = `movie-card-${imdbID}`;
   article.innerHTML = `
     <img src="${Poster}" alt="Poster de ${Title}.">
     <button class="remove-button">
@@ -81,7 +80,9 @@ function updateUI({ imdbID, Poster, Title }) {
     </button>
   `;
 
-  article.querySelector(".remove-button").addEventListener("click", () => removeFilmFromList(imdbID));
+  article
+    .querySelector(".remove-button")
+    .addEventListener("click", () => removeFilmFromList(imdbID));
 
   movieListContainer.appendChild(article);
 }

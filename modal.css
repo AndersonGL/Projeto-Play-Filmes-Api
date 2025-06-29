@@ -1,7 +1,7 @@
 :root {
   --primary-color: #29335c;
   --light-primary: #3f4f8d;
-  --lightest-color: #e9ebd5;
+  --ligthest-color: #e9ebd5;
   --secondary-color: #774936;
   --light-secondary: #b97e64;
 }
@@ -34,7 +34,7 @@
 }
 #modal-container {
   z-index: 1;
-  background-color: var(--lightest-color);
+  background-color: var(--ligthest-color);
   padding: 1rem 3rem;
   border-radius: 10px;
 }
@@ -67,5 +67,5 @@
 #add-to-list:focus,
 #add-to-list:hover {
   background-color: var(--light-primary);
-  color: var(--lightest-color);
+  color: var(--ligthest-color);
 }
