@@ -1,4 +1,4 @@
-# 🎬 MovieFinder - Consulta de Filmes com OMDb API
+# 🎬 Play-Filmes - Consulta de Filmes com OMDb API
 
 > Um projeto simples e funcional que consome a **API gratuita do OMDb (Open Movie Database)** para buscar filmes e exibir seus respectivos anos de lançamento.
 
@@ -23,7 +23,7 @@ Este projeto é ideal para praticar **consumo de APIs REST**, **manipulação de
 
 ## 📷 Demonstração
 
-![MovieFinder Preview](https://via.placeholder.com/800x400.png?text=MovieFinder+Preview)
+![MovieFinder Preview](https://via.placeholder.com/800x400.png?text=play-filmes+Preview)
 
 ---
 
@@ -41,4 +41,4 @@ Este projeto é ideal para praticar **consumo de APIs REST**, **manipulação de
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/movie-finder.git
+   git clone https://github.com/seu-usuario/play-filmes-api.git
