@@ -21,9 +21,6 @@ Este projeto é ideal para praticar **consumo de APIs REST**, **manipulação de
 
 ---
 
-## 📷 Demonstração
-
-![MovieFinder Preview](https://via.placeholder.com/800x400.png?text=play-filmes+Preview)
 
 ---
 
