@@ -38,4 +38,4 @@ Este projeto é ideal para praticar **consumo de APIs REST**, **manipulação de
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/play-filmes-api.git
+   git clone https://github.com/AndersonGL/play-filmes-api.git
